@@ -1,0 +1,11 @@
+# ninja log v5
+1	508	685975890	Graphic/CMakeFiles/Graphic.dir/Graphic.cpp.obj	6a303b8127b16a58
+509	2076	685975891	Graphic/Graphic.exe	a2fdf012da0826bb
+5	787	686233005	Graphic/CMakeFiles/Graphic.dir/test.cpp.obj	fc0f0a3a1d3c91e1
+1	809	686233005	Graphic/CMakeFiles/Graphic.dir/Graphic.cpp.obj	d05713f8c60c11c8
+809	2292	686233006	Graphic/Graphic.exe	b3f9fe2c2616d0af
+1	1582	686234089	Graphic/Graphic.exe	faa2ff53db3abade
+1	1126	686234136	Graphic/Graphic.exe	fe78b51cbaffeb94
+6	828	686234341	Graphic/CMakeFiles/Graphic.dir/test.cpp.obj	dab555f18b2379f
+1	846	686234341	Graphic/CMakeFiles/Graphic.dir/Graphic.cpp.obj	6a303b8127b16a58
+847	2122	686234341	Graphic/Graphic.exe	b3f9fe2c2616d0af

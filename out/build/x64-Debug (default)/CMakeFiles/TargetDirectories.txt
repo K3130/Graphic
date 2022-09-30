@@ -1,0 +1,5 @@
+C:/Users/smirnov.k/source/repos/Graphic/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+C:/Users/smirnov.k/source/repos/Graphic/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
+C:/Users/smirnov.k/source/repos/Graphic/out/build/x64-Debug (default)/Graphic/CMakeFiles/Graphic.dir
+C:/Users/smirnov.k/source/repos/Graphic/out/build/x64-Debug (default)/Graphic/CMakeFiles/edit_cache.dir
+C:/Users/smirnov.k/source/repos/Graphic/out/build/x64-Debug (default)/Graphic/CMakeFiles/rebuild_cache.dir
