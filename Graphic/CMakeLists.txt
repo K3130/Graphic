@@ -4,7 +4,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (Graphic "Graphic.cpp" "Graphic.h" "common.h" )
+add_executable (Graphic "Graphic.hpp" "common.h" )
 
 find_package(glad CONFIG REQUIRED)
 target_link_libraries(Graphic PRIVATE glad::glad)
