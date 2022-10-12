@@ -77,11 +77,11 @@ namespace Graphic
 			glfwGetFramebufferSize(m_window, &display_w, &display_h);
 			glViewport(0, 0, display_w, display_h);
 
-
-			glClearColor(m_background_color.x * m_background_color.w, m_background_color.y * m_background_color.w, m_background_color.z * m_background_color.w, m_background_color.w);
+						glClearColor(m_background_color.x * m_background_color.w, m_background_color.y * m_background_color.w, m_background_color.z * m_background_color.w, m_background_color.w);
 			glClear(GL_COLOR_BUFFER_BIT);
 			ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 		}
+	public:
 		void Shutdown()
 		{
 			ImGui_ImplOpenGL3_Shutdown();
