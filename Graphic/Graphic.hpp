@@ -7,12 +7,11 @@ namespace Graphic
 	template <typename Derived>
 	class ImGuiWindowOpengl	{
 	public:
-		ImGuiWindowOpengl() : m_window(nullptr), m_background_color(ImVec4({})) {} 
+		ImGuiWindowOpengl() : m_window(nullptr) {} 
 		~ImGuiWindowOpengl() {}
 	
-		void Init(int aWidth, int aHeight, const char* aTitle, ImVec4 aBackgroundColor)
+		void Init(int aWidth, int aHeight, const char* aTitle)
 		{
-			m_background_color = aBackgroundColor;
 			//-------------------------------------------
 			// Setup window
 			if (!glfwInit())
@@ -70,15 +69,19 @@ namespace Graphic
 		{
 			static_cast<Derived*>(this)->UpdateGraphicScene();
 		}
+		void OnRender()
+		{
+			static_cast<Derived*>(this)->OnRender();
+		}
 		void Render()
 		{
 			ImGui::Render();
 			int display_w, display_h;
 			glfwGetFramebufferSize(m_window, &display_w, &display_h);
 			glViewport(0, 0, display_w, display_h);
+			//render
+			OnRender();
 
-						glClearColor(m_background_color.x * m_background_color.w, m_background_color.y * m_background_color.w, m_background_color.z * m_background_color.w, m_background_color.w);
-			glClear(GL_COLOR_BUFFER_BIT);
 			ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 		}
 	public:
@@ -92,7 +95,6 @@ namespace Graphic
 		}
 	private:
 		GLFWwindow* m_window;
-		ImVec4 m_background_color;
 	};
 }
 
